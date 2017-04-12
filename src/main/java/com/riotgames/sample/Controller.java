@@ -35,8 +35,8 @@ public class Controller {
 	private String riotApiKey;
 
 	@RequestMapping(value="/api/v1/calc/{equation}", method = RequestMethod.POST, produces = MediaType.APPLICATION_JSON_UTF8_VALUE)
-	public double calc(@PathVariable(value="equation") String equation) throws UnsupportedEncodingException {
-
+	public JSONObject calc(@PathVariable(value="equation") String equation) throws UnsupportedEncodingException {
+		
 		String[] array = equation.split(" ");
 		CalcApp ca = new CalcApp();
 		double result = ca.calc(array);
@@ -86,7 +86,7 @@ public class Controller {
 		}
 
 
-		return result;
+		return jo;
 	}
 
 }

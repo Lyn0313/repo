@@ -54,14 +54,14 @@ public class CalcApp {
         return Double.parseDouble(dealEquation(str)); //계산
     }
 
-    
+    /*
     public static void main( String[] args ) {
         final CalcApp app = new CalcApp();
         final StringBuilder outputs = new StringBuilder();
         Arrays.asList(args).forEach(value -> outputs.append(value + " "));
         System.out.print( "Addition of values: " + outputs + " = ");
         System.out.println(app.calc(args));
-    }
+    }*/
     
     public String toSuffix(String infix){
 		
