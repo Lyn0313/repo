@@ -23,6 +23,7 @@ public class CalcApp {
 		basic.put('(', 0);
 	}
 	
+	CalcApp(){}
 
 
 	/*
